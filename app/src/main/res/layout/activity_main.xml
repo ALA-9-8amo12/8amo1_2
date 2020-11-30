@@ -9,7 +9,7 @@
 
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/buttonover"
         android:layout_width="164dp"
         android:layout_height="47dp"
         android:background="@drawable/rounded_corners"
@@ -18,16 +18,16 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonscore" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/buttonspelen"
         android:layout_width="199dp"
         android:layout_height="56dp"
         android:layout_marginBottom="1dp"
         android:background="@drawable/rounded_corners"
         android:text="Spelen"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/buttonoefenen"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Titel" />
@@ -49,18 +49,18 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonoefenen"
         android:layout_width="199dp"
         android:layout_height="56dp"
         android:background="@drawable/rounded_corners"
         android:text="Oefenen"
-        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintBottom_toTopOf="@+id/buttonscore"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonspelen" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/buttonscore"
         android:layout_width="199dp"
         android:layout_height="56dp"
         android:background="@drawable/rounded_corners"
@@ -68,6 +68,23 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonspelen" />
+
+    <TextView
+        android:id="@+id/TestView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="172dp"
+        android:layout_marginLeft="172dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="172dp"
+        android:layout_marginRight="172dp"
+        android:layout_marginBottom="19dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonspelen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Titel" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
