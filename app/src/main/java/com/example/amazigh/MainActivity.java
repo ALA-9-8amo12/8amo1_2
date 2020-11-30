@@ -22,7 +22,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_splash);
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent homeIntent = new Intent( MainActivity.this, SplashActivity.class);
+                startActivity(homeIntent);
+                finish();
+            }
         //Button Spelen
         Button button = findViewById(R.id.buttonspelen);
 
@@ -61,8 +68,9 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(this, OverActivity.class);
 
             startActivity(intent);
-        });
+        }, SPLASH_TIME_OUT);
     }
 
 
 }
+
