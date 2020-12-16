@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "904623473016-so90mcvgkpl8m2bfo6jas1t2b3jdjj33.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.amazigh",
+            "certificate_hash": "837d78998419a90a7172153e1a3b9e4ee7ffa3a0"
+          }
+        },
+        {
           "client_id": "904623473016-7isf6r848epmo9n5q9g950ua5duhb9so.apps.googleusercontent.com",
           "client_type": 3
         }
